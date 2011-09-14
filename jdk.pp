@@ -37,9 +37,8 @@ class jdk{
 	}
 
 	augeas{"java_home":
-		changes=> [
-		"set JAVA_HOME /opt/sun/jdk1.6.0_27"
-		]
+		require=>Package["augeas"],
+		changes=> ["set /files/etc/environment/JAVA_HOME /opt/sun/jdk1.6.0_27"],
 	} 
 }
 
