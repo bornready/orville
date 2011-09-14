@@ -9,12 +9,18 @@ class jdk{
 
 	$sun_jdk_bin="/opt/sun/sun-jdk-6.bin"
 
+	file{"/opt/sun":
+		ensure => directory,
+	}	
+
 	wget{"sun-jdk-bin":
+		require=>File["/opt/sun"],		
 		source => "http://download.oracle.com/otn-pub/java/jdk/6u27-b07/jdk-6u27-linux-x64.bin",
 		destination => $sun_jdk_bin,
 	}
 
 	file{"$sun_jdk_bin":
+		require=>Wget["sun-jdk-bin"],
 		mode => 755,
 
 	}
@@ -36,6 +42,8 @@ class jdk{
 		]
 	} 
 }
+
+
 
 
 

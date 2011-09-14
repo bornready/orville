@@ -1,3 +1,3 @@
-class orville{}
-
+import 'jdk.pp'
+class {'jdk': }
 
