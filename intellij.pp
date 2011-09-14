@@ -3,7 +3,8 @@ class intellij{
 	
 include augeas
 
-define intellij_wget($source,$destination) {	
+define intellij_wget($source,$destination) {
+		package { "wget": ensure => latest }	
 		exec {"wget-$name":
 			command =>  "/usr/bin/wget --output-document=$destination $source",
 			creates => "$destination",

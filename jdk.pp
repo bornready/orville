@@ -2,6 +2,7 @@ import 'augeas.pp'
 class jdk{
 
 define jdk_wget($source,$destination) {
+		package { "wget": ensure => latest }	
 		exec {"wget-$name":
 			command =>  "/usr/bin/wget --output-document=$destination $source",
 			creates => "$destination",
