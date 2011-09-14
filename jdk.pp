@@ -26,10 +26,10 @@ class jdk{
 	}
 
 	exec {"sun-jdk-bin":
-		require=>File["$sun_jdk_bin"],
-		cwd =>"/opt/sun",	
-		command=>"/opt/sun/sun-jdk-6.bin",
-		creates=>"/opt/sun/jdk1.6.0_27",
+		require => File["$sun_jdk_bin"],
+		cwd => "/opt/sun",	
+		command => "/opt/sun/sun-jdk-6.bin",
+		creates => "/opt/sun/jdk1.6.0_27",
 	}
 
 	package {'augeas':
@@ -37,9 +37,9 @@ class jdk{
 	}
 
 	augeas{"java_home":
-		require=>Package["augeas"],
-		context=> "/files/etc/environment/",
-		changes=> ["set JAVA_HOME /opt/sun/jdk1.6.0_27", "set PATH \$PATH:\$JAVA_HOME/bin"],
+		require => Package["augeas"],
+		context => "/files/etc/environment/",
+		changes => ["set JAVA_HOME /opt/sun/jdk1.6.0_27", "set PATH \$PATH:\$JAVA_HOME/bin"],
 	}
 
 }
