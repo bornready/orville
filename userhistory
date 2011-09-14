@@ -1,0 +1,91 @@
+[user@localhost manifests]$ history
+    1  su
+    2  cd Desktop
+    3  ls
+    4  cd vmware-tools-distrib/
+    5  ls
+    6  su
+    7  wget
+    8  /usr/bin/wget
+    9  cd usr/tmp
+   10  cd /usr/tmp
+   11  ls
+   12  rm sun-jdk-6.bin 
+   13  su
+   14  wget --output-document=/usr/tmp/google.txt http://www.google.co.uk
+   15  cd usr/tmp
+   16  cd /usr/tmp
+   17  ;s
+   18  ls
+   19  su
+   20  so
+   21  su
+   22  su -c 'yum -y install ruby puppet'
+   23  puppet resource user
+   24  su
+   25  ls
+   26  cd
+   27  cd Documents/
+   28  ls
+   29  puppet myfile.pp
+   30  ls
+   31  cd manifests/
+   32  ls
+   33  puppet init.pp
+   34  su
+   35  JAVA
+   36  java
+   37  java --version
+   38  java -v
+   39  java -version
+   40  echo JAVA_HOME
+   41  echo $JAVA_HOME
+   42  javac
+   43  javac -version
+   44  puppet jdk.pp
+   45  su
+   46  git
+   47  cd Documents/
+   48  cd manifests/
+   49  ls
+   50  git init
+   51  git add *.pp
+   52  git commit
+   53  git remote add https://github.com/bornready/orville.git
+   54  git remote add origin https://github.com/bornready/orville.git
+   55  git commit
+   56  git commit -m "intellij, java and apache tomcat manifests" *.pp
+   57  git config --global user.name "George Richmond"
+   58  git config --global user.email "georgerichmond@gmail.com"
+   59  git commit --amend --reset-author
+   60  git status
+   61  touch .gitignore
+   62  vi .gitignore
+   63  git status
+   64  git add .gitignore
+   65  git commit -m "added gitignore"
+   66  git push origin master
+   67  history
+   68  git push origin master
+   69  git pull origin
+   70  git pull origin master
+   71  ls
+   72  git push origin master
+   73  svn
+   74  puppet eservice.p
+   75  puppet eservice.pp
+   76  su
+   77  rvm
+   78  su
+   79  ruby -v
+   80  javac
+   81  puppet -help
+   82  cd
+   83  svn checkout http://nmsvn:1080/repositories/sky-com/trunk/sstp/eservice
+   84  ls
+   85  mkdir dev
+   86  mv eservice dev/
+   87  ls
+   88  cd dev/eservice/
+   89  history
+

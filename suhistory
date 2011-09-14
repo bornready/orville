@@ -1,0 +1,503 @@
+    2  exit
+    3  yum install kernel-devel kernel-headers gcc make
+    4  cd /media
+    5  ls
+    6  cd VMware\ Tools/
+    7  ls
+    8  tar -xzf VMwareTools-8.4.7-416484.tar.gz
+    9  exit
+   10  ./vmware-install.pl
+   11  puppet resource user
+   12  gedit /usr/tmp/file.pp
+   13  touch /usr/tmp/file.pp
+   14  gedit /usr/tmp/file.pp
+   15  gedit
+   16  rm /usr/tmp/file.pp
+   17  exit
+   18  rm /usr/tmp/file.pp
+   19  rm sun-jdk-6.bin 
+   20  rm google.txt 
+   21  ls
+   22  .//usr/tmp/sun-jdk-6.bin
+   23  ./ /usr/tmp/sun-jdk-6.bin
+   24  ls
+   25  cd /usr/tmp
+   26  ls
+   27  cd /usr/lib
+   28  ls
+   29  find jdk
+   30  find *jdk*
+   31  search *jdk*
+   32  find -name "jdk"
+   33  cd usr/lib
+   34  cd /usr/lib
+   35  ls
+   36  ;s
+   37  ls
+   38  rm sun-jdk-6.bin 
+   39  yum install augeus
+   40  puppet init.pp
+   41  touch tt.pp
+   42  gedit tt.pp
+   43  puppet init.pp
+   44  mv init.pp jdk.pp
+   45  ls
+   46  rm jdk1.6.0_27/
+   47  rm jdk1.6.0_27/ -rf
+   48  ls
+   49  rm tt.pp
+   50  puppet tt.pp
+   51  puppet eservice.pp
+   52  yum install tomcat
+   53  puppet eservice.pp
+   54  puppet jdk.pp
+   55  puppet intellij.pp
+   56  yum install apache
+   57  ./ sun-jdk-6.bin 
+   58  ./sun-jdk-6.bin 
+   59  ./ sun-jdk-6.bin cd /opt/
+   60  ls
+   61  cd /opt
+   62  ls
+   63  mv sun-jdk-6.bin /opt/sun/sun-jdk-6.bin
+   64  ls
+   65  cd sun
+   66  cd ..
+   67  rm jdk1.6.0_27/ -R
+   68  rm jdk1.6.0_27/ -R -y
+   69  rm jdk1.6.0_27/ -R -Y
+   70  rm -r jdk1.6.0_27/
+   71  rm -rf jdk1.6.0_27/
+   72  ls
+   73  rm -rf jdk1.6.0_27/
+   74  cd /usr/tmp
+   75  ls
+   76  rm *
+   77  ld
+   78  ls
+   79  ./sun-jdk-6.bin
+   80  su
+   81  puppet eservice.pp
+   82  puppet eservice
+   83  git clone git://github.com/blt04/puppet-rvm.git /etc/puppet/modules/rvm
+   84  ls
+   85  cd ..
+   86  vi /etc/puppet/puppet.conf
+   87  puppet eservice
+   88  cd manifests/
+   89  puppet eservice
+   90  vi  /etc/puppet/modules/rvm/manifests/classes/passenger.pp
+   91  puppet eservice
+   92  vi  /etc/puppet/modules/rvm/manifests/classes/passenger.pp
+   93  git clone git://github.com/blt04/puppet-rvm.git /etc/puppet/modules/rvm
+   94  rm /etc/puppet/modules/rvm -r
+   95  rm /etc/puppet/modules/rvm -rf
+   96  git clone git://github.com/blt04/puppet-rvm.git /etc/puppet/modules/rvm
+   97  puppet eservice
+   98  puppet -v
+   99  puppet --version
+  100  yum install puppet
+  101  vi /etc/yum.repos.d/puppet.repo
+  102  vi /etc/yum.repos.d/epel.repo
+  103  ruby -v
+  104  yum --enablerepo=epel,epel-puppet install puppet
+  105  puppet --version
+  106  puppet eservice
+  107  puppet apply eservice
+  108  puppet apply eservice.pp
+  109  rvm
+  110  ls
+  111  cd Doc
+  112  cd Documents/
+  113  cd manifests/
+  114  puppet apply eservice.pp
+  115  ruby -v
+  116  cd Documents/man
+  117  cd Documents/manifests/
+  118  puppet apply eservice.
+  119  puppet apply eservice
+  120  puppet apply eservice.pp
+  121  puppet apply eservice.pp --verbose
+  122  ruby -v
+  123  puppet apply eservice.pp --verbose
+  124  ruby -v
+  125  puppet apply eservice.pp --verbose
+  126  rvm gem install cucumber
+  127  yum install zlib1g-dev
+  128  yum install zlib
+  129  rvm package install zlib
+  130  yum install zlib-devel.i686
+  131  rvm gem install cucumber
+  132  rvm remove jruby-1.6.4
+  133  puppet apply eservice.pp --verbose
+  134  rvm gem install cucumber
+  135  yum install no such file to load -- zlib
+  136  yum install zlib*
+  137  rvm gem install cucumber
+  138  rvm gem install YAML
+  139  puppet apply eservice.pp --verbose
+  140  rvm gem install cucumber
+  141  rvm install zlib
+  142  rvm package install zlib
+  143  rvm pkg install zlib
+  144  rvm remove jruby-1.6.4
+  145  puppet apply eservice.pp --verbose
+  146  rvm gem install cucumber
+  147  rvm notes
+  148  rvm notes cucumber
+  149  rvm notes
+  150  yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel
+  151  rvm remove jruby-1.6.4
+  152  rvm install jruby-1.6.4
+  153  puppet apply eservice.pp --verbose
+  154  rvm gem install cucumber
+  155  jruby -S gem install rubygems-update
+  156  ruby -S gem install rubygems-update
+  157  rvm gem install rubygems-update
+  158  rvm pkg install zlib
+  159  rvm remove jruby-1.6.4
+  160  rvm use 1.9.2
+  161  ruby -v
+  162  rvm use 1.8.7
+  163  rvm install jruby-1.6.4
+  164  rvm use jruby-1.6.4
+  165  ruby -v
+  166  rvm info
+  167  history
+  168  rvm info
+  169  history
+  170  rvm notes
+  171  yum install -y make bzip2 autoconf automake libtool bison ; # libtool, automake, autoconf, bison required for ruby-head
+  172          yum install -y iconv-devel # NOTE: For centos >= 5.4 inconv-devel is provided by glibc
+  173  yum install -y iconv-devel
+  174  rvm remove jruby-1.6.4
+  175  rvm install jruby-1.6.4
+  176  rvm use jruby-1.6.4
+  177  rvm gem install cucumber
+  178  exit
+  179  rvm remove jruby-1.6.4
+  180  rvm install jruby-1.6.4 --with-zlib-dir=$rvm_path/usr
+  181  rvm use jruby-1.6.4
+  182  ruby -v
+  183  rvm gem install cucumber
+  184  rvm info
+  185  rvm notes
+  186  yum install -y bash curl git libxslt
+  187  rvm remove 1.9.2
+  188  rvm install 1.9.2
+  189  rvm remove 1.9.2
+  190  rvm install 1.9.2 --with-zlib-dir=$rvm_path/usr
+  191  rvm use 1.9.2
+  192  rvm gem install cucumber
+  193  cucumber
+  194  history
+  195  rvm remove jruby-1.6.4
+  196  rvm pkg install openssl
+  197  rvm pkg install readline
+  198  rvm pkg install zlib
+  199  history
+  200  rvm install jruby-1.6.4 --with-readline-dir=~/.rvm/usr --with-openssl-dir=~/.rvm/usr/local --with-zlib-dir=$HOME/.rvm/usr
+  201  rvm remove 1.8.7
+  202  rvm install 1.8.7 --with-readline-dir=~/.rvm/usr --with-openssl-dir=~/.rvm/usr/local --with-zlib-dir=$HOME/.rvm/usr
+  203  rvm use jruby-1.6.4
+  204  gem install cucumber
+  205  rvm gem install cucumber
+  206  cucumber
+  207  rvm gem install cucumber
+  208  cucumber
+  209  cd dev
+  210  cd eservice/
+  211  rake
+  212  rvm gem install rake
+  213  rake
+  214  vi rakefile
+  215  rvm gem install yaml
+  216  rvm gem install cucumber
+  217  rvm install jruby-1.5.2 --with-readline-dir=~/.rvm/usr --with-openssl-dir=~/.rvm/usr/local --with-zlib-dir=$HOME/.rvm/usr
+  218  rvm use jruby-1.5.2
+  219  ruby -v
+  220  rvm gem install cucumber
+  221  hisotry
+  222  history 
+  223  rvm jruby-1.5.2 gem install cucumber
+  224  rvm install bundler
+  225  rvm current
+  226  rvm use @global
+  227  rvm current
+  228  gem install bundler
+  229  which gem
+  230  gem install rake
+  231  cd 
+  232  cd dev/es
+  233  cd dev/eservice
+  234  cd dev
+  235  cd eservice
+  236  exit
+  237  yum install maven
+  238  exit
+  239  rvm remove *
+  240  rvm --help
+  241  rvm uninstall jruby-1.6.4
+  242  ruby -v
+  243  CD
+  244  cd
+  245  cd Documents
+  246  cd
+  247  ls
+  248  exi
+  249  exit
+  250  history
+[root@localhost manifests]# su
+[root@localhost manifests]# history
+    1  yum update
+    2  exit
+    3  yum install kernel-devel kernel-headers gcc make
+    4  cd /media
+    5  ls
+    6  cd VMware\ Tools/
+    7  ls
+    8  tar -xzf VMwareTools-8.4.7-416484.tar.gz
+    9  exit
+   10  ./vmware-install.pl
+   11  puppet resource user
+   12  gedit /usr/tmp/file.pp
+   13  touch /usr/tmp/file.pp
+   14  gedit /usr/tmp/file.pp
+   15  gedit
+   16  rm /usr/tmp/file.pp
+   17  exit
+   18  rm /usr/tmp/file.pp
+   19  rm sun-jdk-6.bin 
+   20  rm google.txt 
+   21  ls
+   22  .//usr/tmp/sun-jdk-6.bin
+   23  ./ /usr/tmp/sun-jdk-6.bin
+   24  ls
+   25  cd /usr/tmp
+   26  ls
+   27  cd /usr/lib
+   28  ls
+   29  find jdk
+   30  find *jdk*
+   31  search *jdk*
+   32  find -name "jdk"
+   33  cd usr/lib
+   34  cd /usr/lib
+   35  ls
+   36  ;s
+   37  ls
+   38  rm sun-jdk-6.bin 
+   39  yum install augeus
+   40  puppet init.pp
+   41  touch tt.pp
+   42  gedit tt.pp
+   43  puppet init.pp
+   44  mv init.pp jdk.pp
+   45  ls
+   46  rm jdk1.6.0_27/
+   47  rm jdk1.6.0_27/ -rf
+   48  ls
+   49  rm tt.pp
+   50  puppet tt.pp
+   51  puppet eservice.pp
+   52  yum install tomcat
+   53  puppet eservice.pp
+   54  puppet jdk.pp
+   55  puppet intellij.pp
+   56  yum install apache
+   57  ./ sun-jdk-6.bin 
+   58  ./sun-jdk-6.bin 
+   59  ./ sun-jdk-6.bin cd /opt/
+   60  ls
+   61  cd /opt
+   62  ls
+   63  mv sun-jdk-6.bin /opt/sun/sun-jdk-6.bin
+   64  ls
+   65  cd sun
+   66  cd ..
+   67  rm jdk1.6.0_27/ -R
+   68  rm jdk1.6.0_27/ -R -y
+   69  rm jdk1.6.0_27/ -R -Y
+   70  rm -r jdk1.6.0_27/
+   71  rm -rf jdk1.6.0_27/
+   72  ls
+   73  rm -rf jdk1.6.0_27/
+   74  cd /usr/tmp
+   75  ls
+   76  rm *
+   77  ld
+   78  ls
+   79  ./sun-jdk-6.bin
+   80  su
+   81  puppet eservice.pp
+   82  puppet eservice
+   83  git clone git://github.com/blt04/puppet-rvm.git /etc/puppet/modules/rvm
+   84  ls
+   85  cd ..
+   86  vi /etc/puppet/puppet.conf
+   87  puppet eservice
+   88  cd manifests/
+   89  puppet eservice
+   90  vi  /etc/puppet/modules/rvm/manifests/classes/passenger.pp
+   91  puppet eservice
+   92  vi  /etc/puppet/modules/rvm/manifests/classes/passenger.pp
+   93  git clone git://github.com/blt04/puppet-rvm.git /etc/puppet/modules/rvm
+   94  rm /etc/puppet/modules/rvm -r
+   95  rm /etc/puppet/modules/rvm -rf
+   96  git clone git://github.com/blt04/puppet-rvm.git /etc/puppet/modules/rvm
+   97  puppet eservice
+   98  puppet -v
+   99  puppet --version
+  100  yum install puppet
+  101  vi /etc/yum.repos.d/puppet.repo
+  102  vi /etc/yum.repos.d/epel.repo
+  103  ruby -v
+  104  yum --enablerepo=epel,epel-puppet install puppet
+  105  puppet --version
+  106  puppet eservice
+  107  puppet apply eservice
+  108  puppet apply eservice.pp
+  109  rvm
+  110  ls
+  111  cd Doc
+  112  cd Documents/
+  113  cd manifests/
+  114  puppet apply eservice.pp
+  115  ruby -v
+  116  cd Documents/man
+  117  cd Documents/manifests/
+  118  puppet apply eservice.
+  119  puppet apply eservice
+  120  puppet apply eservice.pp
+  121  puppet apply eservice.pp --verbose
+  122  ruby -v
+  123  puppet apply eservice.pp --verbose
+  124  ruby -v
+  125  puppet apply eservice.pp --verbose
+  126  rvm gem install cucumber
+  127  yum install zlib1g-dev
+  128  yum install zlib
+  129  rvm package install zlib
+  130  yum install zlib-devel.i686
+  131  rvm gem install cucumber
+  132  rvm remove jruby-1.6.4
+  133  puppet apply eservice.pp --verbose
+  134  rvm gem install cucumber
+  135  yum install no such file to load -- zlib
+  136  yum install zlib*
+  137  rvm gem install cucumber
+  138  rvm gem install YAML
+  139  puppet apply eservice.pp --verbose
+  140  rvm gem install cucumber
+  141  rvm install zlib
+  142  rvm package install zlib
+  143  rvm pkg install zlib
+  144  rvm remove jruby-1.6.4
+  145  puppet apply eservice.pp --verbose
+  146  rvm gem install cucumber
+  147  rvm notes
+  148  rvm notes cucumber
+  149  rvm notes
+  150  yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel
+  151  rvm remove jruby-1.6.4
+  152  rvm install jruby-1.6.4
+  153  puppet apply eservice.pp --verbose
+  154  rvm gem install cucumber
+  155  jruby -S gem install rubygems-update
+  156  ruby -S gem install rubygems-update
+  157  rvm gem install rubygems-update
+  158  rvm pkg install zlib
+  159  rvm remove jruby-1.6.4
+  160  rvm use 1.9.2
+  161  ruby -v
+  162  rvm use 1.8.7
+  163  rvm install jruby-1.6.4
+  164  rvm use jruby-1.6.4
+  165  ruby -v
+  166  rvm info
+  167  history
+  168  rvm info
+  169  history
+  170  rvm notes
+  171  yum install -y make bzip2 autoconf automake libtool bison ; # libtool, automake, autoconf, bison required for ruby-head
+  172          yum install -y iconv-devel # NOTE: For centos >= 5.4 inconv-devel is provided by glibc
+  173  yum install -y iconv-devel
+  174  rvm remove jruby-1.6.4
+  175  rvm install jruby-1.6.4
+  176  rvm use jruby-1.6.4
+  177  rvm gem install cucumber
+  178  exit
+  179  rvm remove jruby-1.6.4
+  180  rvm install jruby-1.6.4 --with-zlib-dir=$rvm_path/usr
+  181  rvm use jruby-1.6.4
+  182  ruby -v
+  183  rvm gem install cucumber
+  184  rvm info
+  185  rvm notes
+  186  yum install -y bash curl git libxslt
+  187  rvm remove 1.9.2
+  188  rvm install 1.9.2
+  189  rvm remove 1.9.2
+  190  rvm install 1.9.2 --with-zlib-dir=$rvm_path/usr
+  191  rvm use 1.9.2
+  192  rvm gem install cucumber
+  193  cucumber
+  194  history
+  195  rvm remove jruby-1.6.4
+  196  rvm pkg install openssl
+  197  rvm pkg install readline
+  198  rvm pkg install zlib
+  199  history
+  200  rvm install jruby-1.6.4 --with-readline-dir=~/.rvm/usr --with-openssl-dir=~/.rvm/usr/local --with-zlib-dir=$HOME/.rvm/usr
+  201  rvm remove 1.8.7
+  202  rvm install 1.8.7 --with-readline-dir=~/.rvm/usr --with-openssl-dir=~/.rvm/usr/local --with-zlib-dir=$HOME/.rvm/usr
+  203  rvm use jruby-1.6.4
+  204  gem install cucumber
+  205  rvm gem install cucumber
+  206  cucumber
+  207  rvm gem install cucumber
+  208  cucumber
+  209  cd dev
+  210  cd eservice/
+  211  rake
+  212  rvm gem install rake
+  213  rake
+  214  vi rakefile
+  215  rvm gem install yaml
+  216  rvm gem install cucumber
+  217  rvm install jruby-1.5.2 --with-readline-dir=~/.rvm/usr --with-openssl-dir=~/.rvm/usr/local --with-zlib-dir=$HOME/.rvm/usr
+  218  rvm use jruby-1.5.2
+  219  ruby -v
+  220  rvm gem install cucumber
+  221  hisotry
+  222  history 
+  223  rvm jruby-1.5.2 gem install cucumber
+  224  rvm install bundler
+  225  rvm current
+  226  rvm use @global
+  227  rvm current
+  228  gem install bundler
+  229  which gem
+  230  gem install rake
+  231  cd 
+  232  cd dev/es
+  233  cd dev/eservice
+  234  cd dev
+  235  cd eservice
+  236  exit
+  237  yum install maven
+  238  exit
+  239  rvm remove *
+  240  rvm --help
+  241  rvm uninstall jruby-1.6.4
+  242  ruby -v
+  243  CD
+  244  cd
+  245  cd Documents
+  246  cd
+  247  ls
+  248  exi
+  249  exit
+  250  history
+[root@localhost manifests]# 
+

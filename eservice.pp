@@ -48,7 +48,9 @@ rvm_system_ruby {
       default_use => true;	
   }
 
-rvm::system_user {user: ;}
+rvm::system_user {user: 
+	require => User["user"]
+;}
 
 rvm_gem {
     'jruby@global/bundler':
@@ -58,8 +60,7 @@ augeas{"BUILD_NUMBER":
 		changes=> [
 		"set BUILD_NUMBER LOCAL"
 		]
-	} 
-
+	}
 
 
 
