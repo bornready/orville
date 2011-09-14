@@ -38,13 +38,10 @@ class jdk{
 
 	augeas{"java_home":
 		require=>Package["augeas"],
-		changes=> ["set /files/etc/environment/JAVA_HOME /opt/sun/jdk1.6.0_27"],
+		context=> "/files/etc/environment/",
+		changes=> ["set JAVA_HOME /opt/sun/jdk1.6.0_27", "set PATH \$PATH:\$JAVA_HOME/bin"],
 	}
 
-	augeas{"java_home_path":
-		require=>Package["augeas"],
-		changes=> ["set /files/etc/environment/PATH \$PATH:\$JAVA_HOME/bin"],
-	}  
 }
 
 
