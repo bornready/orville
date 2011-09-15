@@ -12,6 +12,7 @@ include augeas
 		destination => $intellij_install_file,
 	}
 
+
 	exec {"unpack_intellij":
 		require => Wget::Fetch["intellij_install"],		
 		cwd =>"/opt",	
@@ -19,11 +20,15 @@ include augeas
 		creates=>"/opt/idea/bin/",
 	}
 
-	
 
-	augeas{"idea_home":
-		require => Package["augeas"],
-		context => "/files/etc/environment/",
-		changes => ["set IDEA_HOME /opt/idea", "set PATH[last()+1] \$PATH:\$IDEA_HOME/bin"],
-	}	
+	file {"/etc/profile.d/intellij.sh":
+		ensure => "present",
+		owner => "root",
+		group => "root",
+		mode => 644,
+		content => "IDEA_HOME=/opt/idea;PATH=$PATH:$IDEA_HOME/bin",
+        }
+
+	
+	
 }

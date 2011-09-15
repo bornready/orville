@@ -30,12 +30,15 @@ class jdk{
 	}
 
 
+	file {"/etc/profile.d/java.sh":
+		ensure => "present",
+		owner => "root",
+		group => "root",
+		mode => 644,
+		content => "JAVA_HOME=/opt/sun/jdk1.6.0_27;PATH=\$PATH:\$JAVA_HOME/bin",
+        }
 
-	augeas{"java_home":
-		require => Package["augeas"],
-		context => "/files/etc/environment/",
-		changes => ["set JAVA_HOME /opt/sun/jdk1.6.0_27", "set PATH[last()+1] \$PATH:\$JAVA_HOME/bin"],
-	}
+
 
 }
 
