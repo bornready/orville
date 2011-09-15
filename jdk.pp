@@ -1,13 +1,6 @@
+
 import 'augeas.pp'
 class jdk{
-
-define jdk_wget($source,$destination) {
-		package { "wget": ensure => latest }	
-		exec {"wget-$name":
-			command =>  "/usr/bin/wget --output-document=$destination $source",
-			creates => "$destination",
-		}
-	}
 
 	include augeas	
 
@@ -17,14 +10,14 @@ define jdk_wget($source,$destination) {
 		ensure => directory,
 	}	
 
-	jdk_wget{"sun-jdk-bin":
+	wget::fetch{"sun-jdk-bin":
 		require=>File["/opt/sun"],		
 		source => "http://download.oracle.com/otn-pub/java/jdk/6u27-b07/jdk-6u27-linux-x64.bin",
 		destination => $sun_jdk_bin,
 	}
 
 	file{"$sun_jdk_bin":
-		require=>JDK_Wget["sun-jdk-bin"],
+		require=>Wget::Fetch["sun-jdk-bin"],
 		mode => 755,
 
 	}
