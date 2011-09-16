@@ -1,6 +1,7 @@
 class intellij{
 	
 	$idea_version = "ideaIU-10.5.2"
+	$idea_build_number = "idea-IU-107.587"
 	$intellij_url = "http://download.jetbrains.com/idea/$idea_version.tar.gz"
 	$intellij_install_file = "/usr/tmp/idea.tar.gz"
 
@@ -19,8 +20,8 @@ class intellij{
 	exec {"unpack_intellij":
 		require => Wget::Fetch["intellij_install"],		
 		cwd =>"/home/user/Applications",	
-		command=>"/bin/tar -xvf $intellij_install_file;ln -s idea* idea;chown -R user:user idea*",
-		creates=>"/home/user/Applications/$idea_version",
+		command=>"/bin/tar -xvf $intellij_install_file;ln -s $idea_build_number idea;chown -R user:user idea $idea_build_number",
+		creates=>"/home/user/Applications/$idea_build_number/",
 	}
 
 
