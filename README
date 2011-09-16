@@ -2,13 +2,6 @@ You need this to set up the puppet repo to get the latest one:
 
 http://www.craigdunn.org/2010/08/part-1-installing-puppet-2-6-1-on-centos-with-yumrpm/
 
-Added     
-	modulepath = /home/user/orville/modules 
-to
-	[main] 
-section of
-	/etc/puppet/puppet.conf
-
 sudo yum install -y rubygems
 sudo gem install puppet-module
 

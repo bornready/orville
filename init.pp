@@ -1,4 +1,4 @@
-include wget
+import 'wget.pp'
 
 import 'jdk.pp'
 class {'jdk': }

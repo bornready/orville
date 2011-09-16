@@ -12,14 +12,14 @@ class jdk{
 		ensure => directory,
 	}	
 
-	wget::fetch{"sun-jdk-bin":
+	fetch{"sun-jdk-bin":
 		require=>File["$base_path"],		
 		source => "http://download.oracle.com/otn-pub/java/jdk/6u27-b07/jdk-6u27-linux-x64.bin",
 		destination => $sun_jdk_bin,
 	}
 
 	file{"$sun_jdk_bin":
-		require=>Wget::Fetch["sun-jdk-bin"],
+		require=>Fetch["sun-jdk-bin"],
 		mode => 755,
 	}
 
