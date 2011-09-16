@@ -26,7 +26,7 @@ include augeas
 		owner => "root",
 		group => "root",
 		mode => 644,
-		content => "IDEA_HOME=/opt/idea;JDK_HOME=/usr/java/default;PATH=\$PATH:\$IDEA_HOME/bin",
+		content => "PATH=\$PATH:/opt/idea/bin",
         }
 
 	

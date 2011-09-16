@@ -36,7 +36,7 @@ class jdk{
 		owner => "root",
 		group => "root",
 		mode => 644,
-		content => "JAVA_HOME=/usr/java/default;PATH=\$PATH:\$JAVA_HOME/bin",
+		content => "export JAVA_HOME=/usr/java/default;PATH=\$PATH:\$JAVA_HOME/bin",
         }
 
 	file { "/usr/java/default":
