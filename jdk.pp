@@ -2,16 +2,18 @@
 import 'augeas.pp'
 class jdk{
 
-	include augeas	
+	include augeas
 
-	$sun_jdk_bin="/opt/sun/sun-jdk-6.bin"
+	$base_path="/usr/java"
+	$jdk_path="$base_path/jdk1.6.0_27"
+	$sun_jdk_bin="$base_path/sun-jdk-6.bin"
 
-	file{"/opt/sun":
+	file{"$base_path":
 		ensure => directory,
 	}	
 
 	wget::fetch{"sun-jdk-bin":
-		require=>File["/opt/sun"],		
+		require=>File["$base_path"],		
 		source => "http://download.oracle.com/otn-pub/java/jdk/6u27-b07/jdk-6u27-linux-x64.bin",
 		destination => $sun_jdk_bin,
 	}
@@ -19,14 +21,13 @@ class jdk{
 	file{"$sun_jdk_bin":
 		require=>Wget::Fetch["sun-jdk-bin"],
 		mode => 755,
-
 	}
 
 	exec {"sun-jdk-bin":
 		require => File["$sun_jdk_bin"],
-		cwd => "/opt/sun",	
-		command => "/opt/sun/sun-jdk-6.bin",
-		creates => "/opt/sun/jdk1.6.0_27",
+		cwd => "$base_path",	
+		command => "$base_path/sun-jdk-6.bin",
+		creates => "$jdk_path",
 	}
 
 
@@ -35,10 +36,18 @@ class jdk{
 		owner => "root",
 		group => "root",
 		mode => 644,
-		content => "JAVA_HOME=/opt/sun/jdk1.6.0_27;PATH=\$PATH:\$JAVA_HOME/bin",
+		content => "JAVA_HOME=/usr/java/default;PATH=\$PATH:\$JAVA_HOME/bin",
         }
 
+	file { "/usr/java/default":
+		ensure => symlink,
+		target => "$jdk_path"
+	}
 
+	file { "/usr/bin/java":
+		ensure => symlink,
+		target => "/usr/java/default/bin/java"
+	}
 
 }
 
