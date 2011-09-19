@@ -34,27 +34,28 @@ package {"curl":
 
 
 user { "user":
-                    home    => "/home/user",
-            }
-
+	home    => "/home/user",
+        }
 
 import "rvm"
 
 include rvm::system
 
-rvm_system_ruby {
-    'jruby':
-      ensure => 'present',
-      default_use => true;	
-  }
-
 rvm::system_user {user: 
-	require => User["user"]
-;}
+	require => User["user"];
+}
 
-rvm_gem {
-    'jruby@global/bundler':
-  }
+if $rvm_installed == "true" {
+	rvm_system_ruby {
+	    'jruby':
+	      ensure => 'present',
+	      default_use => true;	
+	  }
+
+	rvm_gem {
+	    'jruby@global/bundler':
+	}
+}
 
 augeas{"BUILD_NUMBER":
 		changes=> [

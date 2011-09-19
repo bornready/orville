@@ -1,8 +1,10 @@
 import 'wget.pp'
 
 import 'jdk.pp'
-class {'jdk': }
+include jdk
 
 import 'intellij.pp'
-class {'intellij': }
+include intellij
+
+import 'eservice.pp'
 
