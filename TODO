@@ -1,0 +1,46 @@
+Base installation
+JDK [done]
+Apache [done]
+Tomcat [done]
+Git and Subversion [done]
+Maven [done]
+
+Rvm and bundler
+* jruby
+* ruby 1.8.7
+
+Groovy and Grails
+
+-> Run an eservice build and have app running (setup directory /apps)
+
+Client/server puppet
+VMWare Tools
+
+
+Slave
+teamcity agent install
+- run an eservice build from teamcity
+
+cucumber test working
+- run an eservice functional test
+
+bootstrap teamcity agent
+- restarting vm will restart teamcity agent
+
+ppv
+- run a ppv build from teamcity
+- run a ppv functional test
+
+
+Dev machine
+Intellij
+Dropbox
+Chrome
+Open Office
+GIMP
+
+
+Future improvements
+- Lightweight X-window for the slaves OR xvfb (for Amazon cloud) 
+
+
