@@ -1,6 +1,14 @@
-You need this to set up the puppet repo to get the latest one:
+To install puppet
 
-http://www.craigdunn.org/2010/08/part-1-installing-puppet-2-6-1-on-centos-with-yumrpm/
+put the following in /etc/yum.repos.d/puppet.repo
+[puppetlabs]
+name=Puppet Labs Packages
+baseurl=http://yum.puppetlabs.com/fedora/f15/products/x86_64/
+enabled=0
+gpgcheck=0
+
+then run
+sudo yum -y --enablerepo=puppetlabs install puppet
 
 Instructions for adding a puppet rvm module
 https://github.com/blt04/puppet-rvm
