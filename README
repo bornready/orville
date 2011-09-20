@@ -4,7 +4,10 @@ git clone http://bornready:Test12345@github.com/bornready/orville
 sudo cp orville/yum.repos.d/puppet.repo /etc/yum.repos.d/
 sudo yum -y --enablerepo=puppetlabs install puppet
 
-Instructions for adding a puppet rvm module
+sudo puppet apply rvm.pp
+
+
+Notes: Instructions for adding a puppet rvm module
 https://github.com/blt04/puppet-rvm
 
 
