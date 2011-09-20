@@ -6,6 +6,12 @@ rvm::system_user {user:
 	require => User["user"];
 }
 
+$ruby_dependencies = ["zlib1g-dev", "libssl-dev", "libreadline5-dev", "libxml2-dev", "libsqlite3-dev"]
+
+package { $ruby_dependencies: 
+	ensure => installed
+}
+
 if $rvm_installed == "true" {
 	rvm_system_ruby {'jruby':
 		ensure => present,
@@ -15,7 +21,8 @@ if $rvm_installed == "true" {
 
 	rvm_system_ruby {'ruby-1.9.2-p290':
 		ensure => present,
-		default_use => false;
+		default_use => false,
+		require => Package[$ruby_dependencies];
 	}
 
 	rvm_gem {'ruby-1.9.2-p290/bundler':
