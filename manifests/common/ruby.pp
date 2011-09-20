@@ -30,12 +30,12 @@ if $rvm_installed == "true" {
 		require => Package[$ruby_dependencies]
 	}
 
-	rvm_gem {'ruby-1.9.2-p290/bundler':
+	rvm_gem {'ruby-1.9.2-p290@global/bundler':
 		ensure => latest,
 		require => Rvm_system_ruby['ruby-1.9.2-p290'],
 	}
 
-	rvm_gem {'jruby/bundler':
+	rvm_gem {'jruby@global/bundler':
 		ensure => latest,
 		require => Rvm_system_ruby['jruby'],
 	}
