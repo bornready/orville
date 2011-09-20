@@ -2,7 +2,7 @@ import 'rvm'
 
 include rvm::system
 
-$rvm_dependencies = ["bash", "curl", "git", "libxslt"]
+$rvm_dependencies = ["bash", "curl", "libxslt"]
 $ruby_dependencies = ["gcc-c++", "patch", "readline", "readline-devel", "zlib", "zlib-devel", "libyaml-devel", "libffi-devel", "openssl-devel", "make", "bzip2", "iconv-devel"]
 
 rvm::system_user {user: 
