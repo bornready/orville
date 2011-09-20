@@ -1,10 +1,9 @@
 import 'wget.pp'
 
+import 'user.pp'
+import 'apache.pp'
 import 'jdk.pp'
-include jdk
-
-import 'intellij.pp'
-include intellij
-
+import 'tomcat.pp'
+import 'ruby.pp'
 import 'eservice.pp'
 
