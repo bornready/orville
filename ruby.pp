@@ -13,14 +13,14 @@ if $rvm_installed == "true" {
 		require => Exec['sun-jdk-bin'];
 	}
 
-	rvm_system_ruby {'ruby-1.9.2-p390':
+	rvm_system_ruby {'ruby-1.9.2-p290':
 		ensure => present,
 		default_use => false;
 	}
 
-	rvm_gem {'ruby-1.9.2-p390/bundler':
+	rvm_gem {'ruby-1.9.2-p290/bundler':
 		ensure => latest,
-		require => Rvm_system_ruby['ruby-1.9.2-p390'];
+		require => Rvm_system_ruby['ruby-1.9.2-p290'];
 	}
 
 	rvm_gem {'jruby/bundler':
