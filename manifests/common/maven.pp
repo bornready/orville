@@ -1,0 +1,3 @@
+package {"maven":
+	ensure => installed,
+}

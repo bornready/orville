@@ -1,0 +1,5 @@
+package {"git":
+	ensure => installed,
+}
+
+
