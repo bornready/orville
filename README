@@ -1,3 +1,6 @@
+Disable SELinux and reboot
+sudo sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config && sudo /sbin/reboot
+
 To clone this project
 sudo yum -y install git
 git clone http://bornready:Test12345@github.com/bornready/orville
