@@ -24,28 +24,28 @@
 ## These are groups of related commands...
 
 ## Networking
-Cmnd_Alias NETWORKING = /sbin/route, /sbin/ifconfig, /bin/ping, /sbin/dhclient, /usr/bin/net, /sbin/iptables, /usr/bin/rfcomm, /usr/bin/wvdial, /sbin/iwconfig, /sbin/mii-tool
+# Cmnd_Alias NETWORKING = /sbin/route, /sbin/ifconfig, /bin/ping, /sbin/dhclient, /usr/bin/net, /sbin/iptables, /usr/bin/rfcomm, /usr/bin/wvdial, /sbin/iwconfig, /sbin/mii-tool
 
 ## Installation and management of software
-Cmnd_Alias SOFTWARE = /bin/rpm, /usr/bin/up2date, /usr/bin/yum
+# Cmnd_Alias SOFTWARE = /bin/rpm, /usr/bin/up2date, /usr/bin/yum
 
 ## Services
-Cmnd_Alias SERVICES = /sbin/service, /sbin/chkconfig
+# Cmnd_Alias SERVICES = /sbin/service, /sbin/chkconfig
 
 ## Updating the locate database
-Cmnd_Alias LOCATE = /usr/bin/updatedb
+# Cmnd_Alias LOCATE = /usr/bin/updatedb
 
 ## Storage
-Cmnd_Alias STORAGE = /sbin/fdisk, /sbin/sfdisk, /sbin/parted, /sbin/partprobe, /bin/mount, /bin/umount
+# Cmnd_Alias STORAGE = /sbin/fdisk, /sbin/sfdisk, /sbin/parted, /sbin/partprobe, /bin/mount, /bin/umount
 
 ## Delegating permissions
-Cmnd_Alias DELEGATING = /usr/sbin/visudo, /bin/chown, /bin/chmod, /bin/chgrp 
+# Cmnd_Alias DELEGATING = /usr/sbin/visudo, /bin/chown, /bin/chmod, /bin/chgrp 
 
 ## Processes
-Cmnd_Alias PROCESSES = /bin/nice, /bin/kill, /usr/bin/kill, /usr/bin/killall
+# Cmnd_Alias PROCESSES = /bin/nice, /bin/kill, /usr/bin/kill, /usr/bin/killall
 
 ## Drivers
-Cmnd_Alias DRIVERS = /sbin/modprobe
+# Cmnd_Alias DRIVERS = /sbin/modprobe
 
 # Defaults specification
 
@@ -53,7 +53,7 @@ Cmnd_Alias DRIVERS = /sbin/modprobe
 # Disable "ssh hostname sudo <cmd>", because it will show the password in clear. 
 #         You have to run "ssh -t hostname sudo <cmd>".
 #
-#Defaults    requiretty
+# Defaults    requiretty
 
 Defaults    env_reset
 Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
@@ -81,10 +81,12 @@ root	ALL=(ALL) 	ALL
 # %sys ALL = NETWORKING, SOFTWARE, SERVICES, STORAGE, DELEGATING, PROCESSES, LOCATE, DRIVERS
 
 ## Allows people in group wheel to run all commands
-# %wheel	ALL=(ALL)	ALL
+%wheel	ALL=(ALL)	ALL
 
 ## Same thing without a password
 # %wheel	ALL=(ALL)	NOPASSWD: ALL
+
+user    ALL=(ALL) NOPASSWD:      ALL
 
 ## Allows members of the users group to mount and unmount the 
 ## cdrom as root
@@ -93,4 +95,5 @@ root	ALL=(ALL) 	ALL
 ## Allows members of the users group to shutdown this system
 # %users  localhost=/sbin/shutdown -h now
 
-user    ALL=(ALL) NOPASSWD:      ALL
+## Read drop-in files from /etc/sudoers.d (the # here does not mean a comment)
+#includedir /etc/sudoers.d
