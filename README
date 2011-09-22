@@ -3,7 +3,7 @@ sudo sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config && sudo 
 
 To clone this project
 sudo yum -y install git
-git clone http://bornready:Test12345@github.com/bornready/orville
+git clone http://github.com/bornready/orville
 cd orville
 
 To install puppet from scratch:
