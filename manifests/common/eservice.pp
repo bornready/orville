@@ -9,7 +9,7 @@ file { "/etc/profile.d/eservice.sh":
 file { "/etc/httpd/conf.d/eservice.conf":
 	ensure => symlink,
 	owner => apache,
-	target => "$eservice_apache_conf",
+	target => "/apps/apache-conf.d/apache-eservice.conf",
 	require => Package['httpd'],
 }
 

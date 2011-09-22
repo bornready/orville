@@ -54,10 +54,3 @@ file {"/apps/ocp-logs/apache":
 	require => File['/apps/ocp-logs'],
 }
 
-file {"/apps/apache-conf.d/apache-eservice.conf":
-	ensure => present,
-	owner => apache,
-	require => File['/apps/apache-conf.d'],
-}
-
-
