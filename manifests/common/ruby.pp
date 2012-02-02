@@ -20,13 +20,13 @@ package { $ruby_dependencies:
 if $rvm_installed == "true" {
 	rvm_system_ruby {'jruby':
 		ensure => present,
-		default_use => true,
+		default_use => false,
 		require => Exec['sun-jdk-bin'],
 	}
 
 	rvm_system_ruby {'ruby-1.9.2-p290':
 		ensure => present,
-		default_use => false,
+		default_use => true,
 		require => Package[$ruby_dependencies]
 	}
 
