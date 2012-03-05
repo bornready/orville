@@ -4,12 +4,8 @@ function disable_selinux_security(){
     sudo gedit /etc/selinux/config
 }
 
-function add_user_to_sudoers(){
-
-}
-
 function install_ruby_dependencies(){
-    sudo yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison iconv-devel}
+    sudo yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison iconv-devel
 }
 
 function install_rvm(){
@@ -33,26 +29,28 @@ function install_puppet(){
 }
 
 function get_orville(){
-    git clone http://github.com/bornready/orville
+   if [ ! -d ~/orville/ ] 
+	then
+      git clone http://github.com/bornready/orville ~/orville
+   fi 
+	
 }
 
 function run_orville(){   
-    rvmsudo puppet apply ~/orvillecommon.pp --verbose
+    rvmsudo puppet apply ~/orville/common.pp --verbose
 }
 
 function get_eservice(){
     mkdir ~/dev
-    cd dev
+    cd ~/dev
     svn co http://nmsvn:1080/repositories/sky-com/trunk/sstp/eservice --username doncieub
 }
 
 
-
-#disable_selinux_security
 #install_ruby_dependencies
 #install_rvm
 #install_puppet
 #get_orville
 #run_orville
-#get_eservice
+get_eservice
 
