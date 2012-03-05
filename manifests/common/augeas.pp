@@ -1,5 +1,5 @@
 class augeas{
-package {'augeas':
+package {'augeas-devel':
 		ensure => installed,
 	}
 }
