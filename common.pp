@@ -1,0 +1,2 @@
+import 'manifests/common/*.pp'
+
